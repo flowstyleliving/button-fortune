@@ -1,0 +1,21 @@
+<div style="text-align: center">
+  <div style="text-align: center" class="well">
+    <div="row">
+      <button type="button" class="btn btn-success" ng-click="vm.getAnswer()">Answer</button>
+      <button type="button" class="btn btn-warning" ng-click="vm.getFortune()">Fortune</button>
+  </div>
+<div class="well">
+<div ng-show="vm.isLoading">
+  <h1>Loading this $hit. Please wait my nigga...</h1>
+</div>
+
+<div ng-show="!vm.isLoading && vm.output">
+  <h2>{{vm.output}}</h2>
+</div>
+
+<div style="text-align: center" ng-show="!vm.isLoading && !vm.output">
+  <h2>Click a button bro! <br>Know your fortune and $hit</h2>
+</div>
+</div>
+
+</div>
